@@ -14,6 +14,12 @@ Just execute the python script. Ensure that you have Python-Tornado installed
 
 There is no configuration required
 
+Testing can be done by testing with /metrics?target=127.0.0.1
+
+example:
+
+curl localhost:9117/metrics?target=192.168.0.23
+
 ## Prometheus Configuration
 
 The ted5000 exporter needs to be passed the address as a parameter, this can be
