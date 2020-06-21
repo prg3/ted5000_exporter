@@ -18,7 +18,7 @@ Testing can be done by testing with /metrics?target=127.0.0.1
 
 example:
 
-curl localhost:9117/metrics?target=192.168.0.23
+curl localhost:9747/metrics?target=192.168.0.23
 
 ## Prometheus Configuration
 
@@ -41,7 +41,7 @@ scrape_configs:
       - source_labels: [__param_target]
         target_label: instance
       - target_label: __address__
-        replacement: 127.0.0.1:9117  # TED5000 exporter.
+        replacement: 127.0.0.1:9747  # TED5000 exporter.
 ```
 
 This setup allows Prometheus to provide scheduling and service discovery, as
