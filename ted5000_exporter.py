@@ -30,5 +30,5 @@ if __name__ == "__main__":
     application = tornado.web.Application([
         (r"/metrics", MetricHandler),
     ])
-    application.listen(9117)
+    application.listen(9747)
     tornado.ioloop.IOLoop.instance().start()
